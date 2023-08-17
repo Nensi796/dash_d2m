@@ -1,0 +1,13 @@
+query Me {
+  me {
+    id
+    name
+    countryCode
+    officeId
+    picture
+    phoneNumber
+    role
+    email
+    isVerified
+  }
+}

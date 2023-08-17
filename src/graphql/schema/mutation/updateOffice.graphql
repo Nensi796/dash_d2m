@@ -1,0 +1,17 @@
+mutation UpdateOffice($input: UpdateOfficeInput!) {
+  updateOffice(input: $input) {
+    office {
+      id
+      name
+      phoneNumber
+      postCode
+      address1
+      address2
+      address3
+    }
+    errors {
+      message
+      code
+    }
+  }
+}

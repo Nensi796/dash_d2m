@@ -1,0 +1,17 @@
+mutation CreateReminder($input: AddReminderInput!) {
+  createReminder(input: $input) {
+    reminder {
+      id
+      subject
+      role
+      dueDate
+      createdBy
+      clientId
+      isCompleted
+    }
+    errors {
+      message
+      code
+    }
+  }
+}

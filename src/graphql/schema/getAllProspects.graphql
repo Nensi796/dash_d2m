@@ -1,0 +1,23 @@
+query GetAllProspects($sort: ListSortInput) {
+  getAllProspects(sort: $sort) {
+    nodes {
+      mortgageDetails {
+        loanAmount
+        interestRates
+        term
+        monthlyPayment
+      }
+      postCode
+      phoneNumber
+      officeId
+      mortgageType
+      id
+      fullName
+      email
+      dob
+      advisorID
+      adviser
+      admin
+    }
+  }
+}

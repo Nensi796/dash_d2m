@@ -1,0 +1,49 @@
+{
+  "name": "direct_mortgages",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --check --ignore-path .gitignore .",
+    "format:fix": "prettier --write --ignore-path .gitignore .",
+    "lint:check": "eslint . --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "eslint . --fix --quiet --ignore-path .eslintignore"
+  },
+  "dependencies": {
+    "@apollo/client": "3.7.10",
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
+    "@material-ui/core": "4.9.1",
+    "@material-ui/icons": "4.9.1",
+    "@mui/icons-material": "5.11.11",
+    "@mui/lab": "^5.0.0-alpha.100",
+    "@mui/material": "5.11.14",
+    "@mui/x-date-pickers": "6.0.3",
+    "@next/bundle-analyzer": "^13.3.1",
+    "@types/lodash": "^4.14.194",
+    "@types/node": "18.15.7",
+    "@types/react": "18.0.29",
+    "@types/react-dom": "18.0.11",
+    "chart.js": "^4.2.0",
+    "cookies-next": "^2.1.1",
+    "dayjs": "1.11.7",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "graphql": "16.6.0",
+    "mui-nested-menu": "^3.2.0",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.8",
+    "react-phone-input-2": "^2.15.1",
+    "react-toastify": "^9.1.2",
+    "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "prettier": "2.8.7"
+  }
+}

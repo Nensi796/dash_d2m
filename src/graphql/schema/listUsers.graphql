@@ -1,0 +1,15 @@
+query Query($roles: [String]) {
+  listUsers(roles: $roles) {
+    nodes {
+      id
+      name
+      countryCode
+      officeId
+      picture
+      phoneNumber
+      role
+      email
+      isVerified
+    }
+  }
+}

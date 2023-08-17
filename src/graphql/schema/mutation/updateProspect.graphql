@@ -1,0 +1,27 @@
+mutation UpdateProspect($input: UpdateProspectInput!) {
+  updateProspect(input: $input) {
+    prospect {
+      mortgageDetails {
+        loanAmount
+        interestRates
+        term
+        monthlyPayment
+      }
+      postCode
+      phoneNumber
+      officeId
+      mortgageType
+      id
+      fullName
+      email
+      dob
+      advisorID
+      admin
+      adviser
+    }
+    errors {
+      message
+      code
+    }
+  }
+}

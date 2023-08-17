@@ -1,0 +1,39 @@
+query ListClients($offset: Int, $limit: Int, $filter: ListClientsFilterInput, $sort: ListSortInput) {
+  listClients(offset: $offset, limit: $limit, filter: $filter, sort: $sort) {
+    nodes {
+      id
+      fullName
+      dob
+      correspondence {
+        fullName
+        dob
+        email
+        countryCode
+        phoneNumber
+        postCode
+      }
+      mortgageType
+      adviser
+      officeId
+      admin
+      mortgageProperty {
+        propertyNumber
+        postCode
+        purchasePrice
+        term
+        rerPaymentMethod
+        lenderAccountNumber
+        lender
+        nextRenewalDate
+        amountRequired
+        additionalProducts {
+          type
+          description
+          renewalDate
+        }
+      }
+      applicants
+    }
+    total
+  }
+}

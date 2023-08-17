@@ -1,0 +1,5 @@
+mutation CreateStaffMember($input: createStaffMember!) {
+  createStaffMember(input: $input) {
+    successMessage
+  }
+}

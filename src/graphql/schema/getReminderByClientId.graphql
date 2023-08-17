@@ -1,0 +1,13 @@
+query GetRemindersByClientId($clientId: String) {
+  getRemindersByClientId(clientId: $clientId) {
+    nodes {
+      id
+      subject
+      role
+      dueDate
+      createdBy
+      clientId
+      isCompleted
+    }
+  }
+}

@@ -1,0 +1,13 @@
+query User($userId: ID!) {
+  user(id: $userId) {
+    id
+    name
+    countryCode
+    officeId
+    picture
+    phoneNumber
+    role
+    email
+    isVerified
+  }
+}

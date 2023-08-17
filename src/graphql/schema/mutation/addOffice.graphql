@@ -1,0 +1,17 @@
+mutation AddOffice($input: AddOfficeInput!) {
+  addOffice(input: $input) {
+    errors {
+      code
+      message
+    }
+    office {
+      id
+      name
+      phoneNumber
+      postCode
+      address1
+      address2
+      address3
+    }
+  }
+}

@@ -1,0 +1,7 @@
+mutation VerifySignupToken($input: VerifySignupTokenInput!) {
+  verifySignupToken(input: $input) {
+    isValid
+    message
+    email
+  }
+}

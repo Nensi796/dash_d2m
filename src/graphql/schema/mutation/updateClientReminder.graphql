@@ -1,0 +1,17 @@
+mutation Mutation($input: UpdateReminderInput!) {
+  updateReminder(input: $input) {
+    reminder {
+      id
+      subject
+      role
+      dueDate
+      createdBy
+      clientId
+      isCompleted
+    }
+    errors {
+      message
+      code
+    }
+  }
+}

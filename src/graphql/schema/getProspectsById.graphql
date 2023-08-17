@@ -1,0 +1,27 @@
+query GetProspectById($prospectId: String) {
+  getProspectById(prospectId: $prospectId) {
+    prospect {
+      id
+      fullName
+      dob
+      email
+      phoneNumber
+      postCode
+      advisorID
+      mortgageType
+      adviser
+      officeId
+      admin
+      mortgageDetails {
+        loanAmount
+        interestRates
+        term
+        monthlyPayment
+      }
+    }
+    errors {
+      message
+      code
+    }
+  }
+}

@@ -1,0 +1,20 @@
+mutation Mutation($input: updateStaffMember!) {
+  updateStaffMember(input: $input) {
+    user {
+      id
+      name
+      countryCode
+      officeId
+      picture
+      phoneNumber
+      role
+      email
+      isVerified
+    }
+    token
+    errors {
+      message
+      code
+    }
+  }
+}

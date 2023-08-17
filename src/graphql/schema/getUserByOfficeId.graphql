@@ -1,0 +1,15 @@
+query ListUsersByOffice($officeId: ID!) {
+  listUsersByOffice(officeId: $officeId) {
+    nodes {
+      id
+      name
+      countryCode
+      officeId
+      picture
+      phoneNumber
+      role
+      email
+      isVerified
+    }
+  }
+}

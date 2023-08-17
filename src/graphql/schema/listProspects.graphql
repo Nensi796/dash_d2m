@@ -1,0 +1,24 @@
+query ListProspects($offset: Int, $limit: Int, $filter: ListProspectsFilterInput, $sort: ListSortInput) {
+  listProspects(offset: $offset, limit: $limit, filter: $filter, sort: $sort) {
+    total
+    nodes {
+      id
+      fullName
+      dob
+      email
+      phoneNumber
+      postCode
+      advisorID
+      mortgageType
+      adviser
+      officeId
+      admin
+      mortgageDetails {
+        loanAmount
+        interestRates
+        term
+        monthlyPayment
+      }
+    }
+  }
+}

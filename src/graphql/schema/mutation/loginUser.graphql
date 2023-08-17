@@ -1,0 +1,21 @@
+mutation Mutation($input: AuthBasicInput!) {
+  authBasic(input: $input) {
+    errors {
+      message
+      code
+    }
+    user {
+      id
+      name
+      countryCode
+      officeId
+      picture
+      phoneNumber
+      role
+      email
+      isVerified
+    }
+    isSuccess
+    successMessage
+  }
+}

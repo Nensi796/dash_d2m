@@ -1,0 +1,11 @@
+mutation VerifyOtp($code: String!, $userId: ID!) {
+  verifyOtp(code: $code, userId: $userId) {
+    isSuccess
+    successMessage
+    errors {
+      message
+      code
+    }
+    token
+  }
+}

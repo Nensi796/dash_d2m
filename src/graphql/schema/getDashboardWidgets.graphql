@@ -1,0 +1,15 @@
+query GetDashboardWidgets {
+  getDashboardWidgets {
+    totalClients
+    activeClients
+    inActiveClients
+    totalProspects
+    activeProspects
+    inActiveProspects
+    clientsByOffice {
+      total
+      officeName
+      officeId
+    }
+  }
+}

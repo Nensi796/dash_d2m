@@ -1,0 +1,14 @@
+query GetAllOffices($filter: ListOfficesFilter, $sort: ListSortInput) {
+  getAllOffices(filter: $filter, sort: $sort) {
+    nodes {
+      id
+      name
+      phoneNumber
+      postCode
+      address1
+      address2
+      address3
+    }
+    total
+  }
+}

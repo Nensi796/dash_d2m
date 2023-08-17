@@ -1,0 +1,10 @@
+query GetRemindersByClientId {
+  getReminders {
+    nodes {
+      _id
+      subject
+      dueDate
+      clientName
+    }
+  }
+}

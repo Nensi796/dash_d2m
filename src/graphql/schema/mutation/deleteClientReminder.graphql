@@ -1,0 +1,9 @@
+mutation DeleteReminder($deleteReminderId: ID!) {
+  deleteReminder(id: $deleteReminderId) {
+    successMessage
+    errors {
+      message
+      code
+    }
+  }
+}
